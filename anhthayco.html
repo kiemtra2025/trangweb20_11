@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ảnh thầy cô</title>
+    <style>
+         body {
+        font-family: 'Times New Roman', serif; /* Thiết lập font chữ chính cho toàn trang */
+        margin: 0; /* Xóa khoảng cách mặc định của trình duyệt */
+        padding: 0; /* Xóa khoảng đệm mặc định của trình duyệt */
+        background-color: #e0f7fa; /* Màu nền xanh nhạt tạo cảm giác dịu mắt */
+        text-align: center; /* Căn giữa nội dung văn bản theo chiều ngang */
+        min-height: 100vh; /* Chiều cao tối thiểu bằng chiều cao màn hình */
+        display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử */
+        flex-direction: column; /* Các phần tử xếp theo trục dọc (từ trên xuống dưới) */
+    }
+
+    header {
+        background-image: url('anh29.jpg'); /* Đặt ảnh nền cho phần header */
+        background-size: cover; /* Ảnh nền phủ kín vùng hiển thị */
+        background-position: center; /* Căn giữa ảnh nền */
+        background-repeat: no-repeat; /* Không lặp lại ảnh nền */
+        height: 570px; /* Chiều cao cố định cho header */
+        display: flex; /* Sử dụng Flexbox để căn giữa nội dung */
+        align-items: center; /* Căn giữa nội dung theo chiều dọc */
+        justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    }
+
+    .text-box {
+        background-color: rgba(0, 0, 0, 0.6); /* Nền mờ màu đen với độ trong suốt 60% */
+        padding: 20px 40px; /* Tạo khoảng đệm bên trong khung văn bản */
+        border-radius: 10px; /* Bo tròn các góc khung văn bản */
+        color: white; /* Màu chữ trắng nổi bật */
+        font-size: 40px; /* Kích thước chữ lớn */
+        font-weight: bold; /* Chữ đậm */
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Tạo bóng đổ cho chữ */
+        font-family: 'Arial', sans-serif; /* Font chữ phụ trợ */
+        letter-spacing: 2px; /* Tăng khoảng cách giữa các chữ cái */
+    } 
+
+    .content {
+        margin: 20px; /* Khoảng cách bên ngoài khối nội dung */
+        padding: 30px; /* Khoảng đệm bên trong khối nội dung */
+        background-color: #fff; /* Nền trắng cho nội dung */
+        border-radius: 30px; /* Bo tròn các góc khối nội dung */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo bóng đổ nhẹ */
+        max-width: 1100px; /* Chiều rộng tối đa của nội dung */
+        margin: auto; /* Căn giữa khối nội dung */
+        border: 2px solid #ff6b6b; /* Đường viền màu đỏ hồng nổi bật */
+    }
+
+    .image-frame {
+        border: 1px solid #000; /* Đường viền đen bao quanh khung ảnh */
+        padding: 10px; /* Khoảng đệm bên trong khung ảnh */
+        border-radius: 15px; /* Bo tròn các góc khung ảnh */
+        max-width: 850px; /* Chiều rộng tối đa của khung ảnh */
+        margin: 20px auto; /* Căn giữa khung ảnh và tạo khoảng cách trên dưới */
+        background-color: white; /* Nền trắng cho khung ảnh */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo bóng đổ nhẹ cho khung ảnh */
+    }
+
+    .cell_img {
+        display: flex; /* Sử dụng Flexbox để sắp xếp các hình ảnh */
+        flex-wrap: wrap; /* Cho phép hình ảnh xuống dòng nếu tràn */
+        justify-content: center; /* Căn giữa các hình ảnh trong khung */
+        gap: 15px; /* Khoảng cách giữa các hình ảnh */
+    }
+
+    .cell_img img {
+        border-radius: 30px; /* Bo tròn góc các hình ảnh */
+        transition: transform 0.3s ease-in-out; /* Hiệu ứng thu phóng mượt mà khi hover */
+        cursor: pointer; /* Thay đổi con trỏ chuột thành hình bàn tay khi di chuột vào ảnh */
+    }
+
+    footer {
+        background-color: #000; /* Màu nền đen cho footer */
+        color: white; /* Màu chữ trắng trong footer */
+        padding: 20px 0; /* Tạo khoảng đệm trên và dưới cho footer */
+        width: 100%; /* Chiều rộng footer chiếm hết màn hình */
+        text-align: left; /* Căn lề trái nội dung trong footer */
+        margin-top: auto; /* Đẩy footer xuống cuối trang nếu nội dung ngắn */
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="text-box">
+         Ảnh thầy cô
+        </div>
+
+    </header>
+        <a href="20-11new.html" class="btn">Quay lại trang chủ</a>
+        <h3>Ảnh thầy cô 20/11 các thời kì</h3>
+
+        <div class="image-frame">
+            <div class="cell_img">
+                <img src="anh39.jpg" alt="Hình ảnh 1" style="width: 300px; height:450px;"> 
+                <img src="anh40.jpg" alt="Hình ảnh 2" style="width: 300px; height:450px;"> 
+                <img src="anh41.jpg" alt="Hình ảnh 3" style="width: 300px; height:450px;"> 
+                <img src="anh42.jpg" alt="Hình ảnh 3" style="width: 300px; height:450px;">    
+            </div>
+           </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p>Liên hệ:</p>
+            <ul>
+                <li>Điện thoại: 0943201646</li>
+                <li>Fanpage: <a href="https://www.facebook.com/profile.php?id=100087170478681" class="link">A4-Báo Tuổi Trẻ</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
