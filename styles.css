@@ -1,0 +1,99 @@
+body {
+        font-family: 'Times New Roman', serif; /* Thiết lập font chữ chính cho trang */
+        margin: 0; /* Loại bỏ khoảng cách mặc định của trình duyệt */
+        padding: 0; /* Loại bỏ đệm mặc định của trình duyệt */
+        background-color: #e0f7fa; /* Màu nền xanh nhạt cho toàn trang */
+        text-align: center; /* Căn giữa văn bản theo chiều ngang */
+        min-height: 100vh; /* Đặt chiều cao tối thiểu bằng chiều cao màn hình */
+        display: flex; /* Sử dụng Flexbox để căn chỉnh nội dung */
+        flex-direction: column; /* Sắp xếp phần tử theo cột dọc */
+    }
+
+    header {
+        background-image: url('anh29.jpg'); /* Đặt hình nền cho phần header */
+        background-size: cover; /* Phủ đầy hình nền trong khung */
+        background-position: center; /* Căn giữa hình nền */
+        background-repeat: no-repeat; /* Không lặp lại hình nền */
+        height: 570px; /* Chiều cao của header */
+        display: flex; /* Sử dụng Flexbox để căn giữa nội dung */
+        align-items: center; /* Căn giữa nội dung theo chiều dọc */
+        justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    }
+
+    .text-box {
+        background-color: rgba(0, 0, 0, 0.6); /* Nền mờ màu đen với độ trong suốt 60% */
+        padding: 20px 40px; /* Tạo khoảng cách bên trong phần tử */
+        border-radius: 10px; /* Bo tròn các góc */
+        color: white; /* Màu chữ trắng */
+        font-size: 40px; /* Kích thước chữ lớn */
+        font-weight: bold; /* Chữ đậm */
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Tạo bóng cho chữ */
+        font-family: 'Arial', sans-serif; /* Sử dụng font Arial cho đoạn văn này */
+        letter-spacing: 2px; /* Tăng khoảng cách giữa các ký tự */
+    } 
+
+    .content {
+        margin: 20px; /* Tạo khoảng cách bên ngoài phần tử */
+        padding: 30px; /* Tạo khoảng cách bên trong phần tử */
+        background-color: #fff; /* Nền trắng cho phần nội dung */
+        border-radius: 30px; /* Bo tròn các góc phần tử */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo bóng mờ cho khối nội dung */
+        max-width: 1100px; /* Giới hạn chiều rộng tối đa */
+        margin: auto; /* Căn giữa phần tử theo chiều ngang */
+        border: 2px solid #ff6b6b; /* Viền đỏ cam nổi bật */
+    }
+
+    .image-frame {
+        border: 1px solid #000; /* Viền đen cho khung hình */
+        padding: 10px; /* Tạo khoảng cách giữa viền và nội dung */
+        border-radius: 15px; /* Bo tròn các góc khung hình */
+        max-width: 850px; /* Giới hạn chiều rộng tối đa của khung */
+        margin: 20px auto; /* Căn giữa khung và tạo khoảng cách trên dưới */
+        background-color: white; /* Nền trắng cho khung */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo bóng mờ nhẹ cho khung */
+    }
+
+    .cell_img {
+        display: flex; /* Sử dụng Flexbox cho bố cục hình ảnh */
+        flex-wrap: wrap; /* Cho phép nội dung xuống dòng nếu không đủ chỗ */
+        justify-content: center; /* Căn giữa hình ảnh trong khung */
+        gap: 15px; /* Khoảng cách giữa các hình ảnh */
+    }
+
+    .cell_img img {
+        border-radius: 30px; /* Bo tròn góc hình ảnh */
+        transition: transform 0.3s ease-in-out; /* Hiệu ứng chuyển đổi khi hover */
+        cursor: pointer; /* Thay đổi con trỏ chuột khi di chuột vào hình ảnh */
+
+    }
+     h1:hover { color: #505C81;}
+
+     .slogan { 
+      background: rgba(0, 128, 0, 0.3) !important;
+      text-align: center !important;
+      padding: 0.5rem 1rem;
+     justify-content: space-around;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+      padding: 5rem;
+    }
+
+    footer {
+        background-color: #000; /* Màu nền đen cho footer */
+        color: white; /* Màu chữ trắng */
+        padding: 20px 0; /* Tạo đệm trên và dưới cho footer */
+        width: 100%; /* Footer chiếm toàn bộ chiều rộng trang */
+        text-align: left; /* Căn lề trái nội dung trong footer */
+        margin-top: auto; /* Đẩy footer xuống đáy trang nếu thiếu nội dung */
+    }
+
+    .decor {
+        font-style: italic; /* Chữ in nghiêng */
+        color: #d63384; /* Màu chữ hồng tím nổi bật */
+        font-size: 18px; /* Kích thước chữ vừa phải */
+    }
+
+   
